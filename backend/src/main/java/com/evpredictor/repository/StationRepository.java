@@ -7,5 +7,5 @@ import java.util.List;
 
 @Repository
 public interface StationRepository extends JpaRepository<Station, Long> {
-    List<Station> findByZoneId(Long zoneId);
+   List<Station> findByZone_Id(Long zoneId);
 }

@@ -22,6 +22,6 @@ public class StationController {
 
     @GetMapping("/zone/{zoneId}")
     public List<Station> getStationsByZone(@PathVariable Long zoneId) {
-        return stationRepository.findByZoneId(zoneId);
+        return stationRepository.findByZone_Id(zoneId);
     }
 }
